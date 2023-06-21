@@ -1,6 +1,7 @@
 import React from "react";
 import classNames from "classnames";
 import "./button.css";
+import "./button.less";
 
 export interface ButtonProps {
   /**

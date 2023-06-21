@@ -10,7 +10,7 @@ const config: StorybookConfig = {
     "@storybook/addon-interactions"
   ],
   docs: {
-    autodocs: true
+    autodocs: true,
   },
   framework: {
     name: "@storybook/react-vite",
@@ -19,6 +19,7 @@ const config: StorybookConfig = {
   core: {
     builder: '@storybook/builder-vite', // 👈 The builder enabled here.
   },
+  staticDirs: ['../docs-dist'],
 };
 
 export default config;
