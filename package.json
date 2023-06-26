@@ -10,7 +10,7 @@
     "prebuild": "rimraf dist",
     "build:docs": "storybook build",
     "build:type": "tsc",
-    "build:assets": "copyfiles src/**/*.* -e \" **/*.{tsx,ts,js,jsx} \" -a -u 1 dist",
+    "build:assets": "copyfiles src/**/*.{css,less,scss,png,webp,svg,jpeg,jpg} -e \" **/*.{tsx,ts} \" -a -u 1 dist",
     "build:component": "swc src -d dist --source-maps",
     "build": "npm run build:type && npm run build:component && npm run build:assets"
   },
